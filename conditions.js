@@ -60,3 +60,30 @@ if (sayi3 > enBüyük) {
     enBüyük = sayi3
 }
 console.log("EnBüyük:", enBüyük)
+
+//! Ornek: Condition birleştirme
+
+const yaş = 14
+const cinsiyet = "erkek"
+const sağlıklı = true
+
+//? string.toLowerCase()  --> built-in fonksiyon (JS nin içerisinde tanımlı olan fonksiyonlar)
+
+const koşul =
+  yaş >= 18 && cinsiyet.toLowerCase() === "erkek" && sağlıklı === true
+  /* burada if in içine koşullarımızı yazmadık onun yerine true ve false sonucu veren bir değişken oluşturduk. if ide true ise şöyle yap değilse böyle yap diyerek kullandık. */
+
+if (koşul)/* boolen ifadelerde kısa yazma durumu vardır, bu ifadeyi koşul === true yazmadan da bu şekilde yazabiliriz. */ {
+  console.log("Askerlik Yapmalı")
+} else {
+  console.log("Askerlik Yapması gerekmez")
+}
+//? if(koşul === true)  ==> if(koşul) koşul true ise gir.
+//* if(koşul === false)  ==> if(!koşul) koşul false ise gir.
+
+const cumle = "Bugün günlerden Cumartesi"
+const kucukHarfler = cumle.toLowerCase()
+const buyukHarfler = cumle.toUpperCase()
+console.log(kucukHarfler)
+console.log(buyukHarfler)
+/* MDN javascript geliştiricilerinin js için oluşturduğu detaylı bir sayfa. */
