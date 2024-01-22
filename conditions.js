@@ -50,7 +50,7 @@ const sayi1 = 101
 const sayi2 = 99
 const sayi3 = 67
 
-let enBüyük = sayi1 /* burada enBüyük diye bir değişken tanımlıyoruz ve sayilardan birini buna atayarak algoritmayı oluşturuyoruz. burada else if kullanmadık çünkü kullansaydık ilk şartı bulduğunda devam etmeyecekti. */
+let enBüyük = sayi1 /* burada enBüyük diye bir değişken tanımlıyoruz ve sayilardan birini buna atayarak algoritmayı oluşturuyoruz. burada else if kullanmadık çünkü kullansaydık ilk şartı bulduğunda devam etmeyecekti. bur da değişken olarak var ı değil let i tercih ettik çünkü var global bir değişken ve  kullansanızda kullanmasanız da bellekte gereksiz yer kaplıyor. */
 
 if (sayi2 > enBüyük) {
     enBüyük = sayi2
