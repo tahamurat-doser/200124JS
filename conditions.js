@@ -147,3 +147,10 @@ let marriage = true
  
 year >= 10 /* && marriage === true  */&& (salary = salary* 1.5) /* bu işlem öncekilerin kısaltılmış hali şeklinde, eğer ilk kısın true döndürürse ikinci kısmı yazdırıyor ama ilk kısın false döndürürse ikinci kısmı hiç dikkate almıyor.  aynı işlemi üçlü de yapabiliriz.*/
 console.log(salary);
+
+//? || ile olumsuz şarlandırma
+const sene = 14 
+let result =""
+ sene >= 18 || (result="cocuk") //dikey payp
+/* false ise yanındaki ifadeyi çalıştır demek */
+console.log(result);
